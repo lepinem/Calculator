@@ -1,6 +1,6 @@
 //get all the buttons from the document//
 
-let buttons = document.querySelectorAll(".wrapper button");
+let buttons = document.getElementsByTagName("button");
 let operators = ["+", "-", "/", "x"];
 // let decAdd = false;
 
@@ -12,8 +12,8 @@ for ( let i=0 ; i<buttons.length; i++ ) {
 
 
 //get the input and button values//
-    let input = document.querySelector(".lcd");
-    
+    let input = document.getElementsByClassName(".lcd");
+
 
 
 
