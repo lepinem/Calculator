@@ -3,45 +3,102 @@
   src: url(font/DS-DIGI.TTF);
 }
 
-body{
+body {
   margin: 10% auto;
 }
 
-button{
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
   height: 100px;
   width: 100px;
-  padding: 10px;
-  background: #8e8e89;
-  color: #dbd9d9;
+  background: #818287;
+  color: #2e4b77;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   font-family: arial;
   font-size: 2.5rem;
   font-weight: bold;
+  border-style: outset;
+  box-sizing: border-box;
+  border-width: thick;
+  border-color: inherit;
 }
 
-div{
-  display: flex;
+button:active {
+  border-style: inset;
 }
 
-.wrapper{
+.op {
+  height: 100px;
+  width: 100px;
+  background: #d3d3d3;
+  color: #2e4b77;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: arial;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-style: outset;
+  box-sizing: border-box;
+  border-width: thick;
+  border-color: inherit;
+}
+
+.op:active {
+  border-style: inset;
+}
+
+.spec {
+  height: 100px;
+  width: 100px;
+  background: #2e4b77;
+  color: #818287;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: arial;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-style: outset;
+  box-sizing: border-box;
+  border-width: thick;
+  border-color: inherit;
+}
+
+.spec:active {
+  border-style: inset;
+}
+
+#wrapper {
   height: 500px;
   width: 400px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid #080e28;
+  border: 10px solid #818287;
+  border-radius: 5px;
   margin: 0 auto;
 }
 
-.lcd{
-  color: #f95454;
-  background: #000000;
-  box-sizing: border-box;
+#lcd {
   border-style: inset;
-  font-size: 5rem;
+  box-sizing: border-box;
+  border-width: thick;
+  font-size: 4rem;
   font-family: "DS-DIGI";
+  font-weight: normal;
+  text-shadow: 3px 3px #9c9da3;
   width: 300px;
   height: 100px;
-  align-items: flex-end;
-  justify-content: flex-end;
   padding: 2px;
+  color: #222225;
+  background: #aeb8b0;
+  text-align: right;
 }
