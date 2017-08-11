@@ -100,5 +100,5 @@ button:active {
   padding: 2px;
   color: #222225;
   background: #aeb8b0;
-  text-align: right;
+  justify-content: flex-end;
 }

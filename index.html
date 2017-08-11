@@ -9,37 +9,37 @@
     <div id="wrapper">
         <form name="calculator">
           <div class="row1">
-            <button class="spec" type="button" onclick="calculator.lcd.value = ''" >C</button>
-            <input id="lcd" type="text" name="lcd" maxlength="8"/>
+            <button class="spec" type="button" value="C" >C</button>
+            <div id="lcd" type="text" name="lcd"></div>
           </div>
           <div class="row">
-            <button type="button" onclick="calculator.lcd.value += '7'" >7</button>
-            <button type="button" onclick="calculator.lcd.value += '8'" >8</button>
-            <button type="button" onclick="calculator.lcd.value += '9'" >9</button>
-            <button class="op" type="button" onclick="calculator.lcd.value += '/'" >÷</button>
+            <button class="num" type="button" value="7" >7</button>
+            <button class="num" type="button" value="8" >8</button>
+            <button class="num" type="button" value="9" >9</button>
+            <button class="op" type="button" value="/" >÷</button>
           </div>
           <div class="row">
-            <button type="button" onclick="calculator.lcd.value += '4'" >4</button>
-            <button type="button" onclick="calculator.lcd.value += '5'" >5</button>
-            <button type="button" onclick="calculator.lcd.value += '6'" >6</button>
-            <button class="op" type="button" onclick="calculator.lcd.value += '*'" >x</button>
+            <button class="num" type="button" value="4" >4</button>
+            <button class="num" type="button" value="5" >5</button>
+            <button class="num" type="button" value="6" >6</button>
+            <button class="op" type="button" value="*" >x</button>
           </div>
           <div class="row">
-            <button type="button" onclick="calculator.lcd.value += '1'" >1</button>
-            <button type="button" onclick="calculator.lcd.value += '2'" >2</button>
-            <button type="button" onclick="calculator.lcd.value += '3'" >3</button>
-            <button class="op" type="button" onclick="calculator.lcd.value += '-'" >-</button>
+            <button class="num" type="button" value="1" >1</button>
+            <button class="num" type="button" value="2" >2</button>
+            <button class="num" type="button" value="3" >3</button>
+            <button class="op" type="button" value="-" >-</button>
           </div>
           <div class="row">
-            <button type="button" onclick="calculator.lcd.value += '0'" >0</button>
-            <button type="button" onclick="calculator.lcd.value += '.'" >.</button>
-            <button class="spec" type="button" onclick="calculator.lcd.value = eval(calculator.lcd.value)" >=</button>
-            <button class="op" type="button" onclick="calculator.lcd.value += '+'" >+</button>
+            <button class="num" type="button" value="0" >0</button>
+            <button class="num" type="button" value="." >.</button>
+            <button class="spec" type="button" value="=" >=</button>
+            <button class="op" type="button" value="+" >+</button>
           </div>
         </form>
     </div>
 
-    <audio src="click.mp3" id="silas"></audio>
+    <audio src="click.mp3" id="silas" autoplay="false"></audio>
 
     <script src="main.js" charset="utf-8"></script>
   </body>
